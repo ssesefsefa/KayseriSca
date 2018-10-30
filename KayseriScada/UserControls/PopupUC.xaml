@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="KayseriScada.UserControls.PopupUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KayseriScada.UserControls"
+             mc:Ignorable="d" Width="427" Height="327">
+    <Viewbox>
+
+        <Canvas Name="popup" Width="344" Height="250">
+
+            <Rectangle Width="321" Height="206" Fill="Bisque" Canvas.Left="8" Canvas.Top="30" RadiusY="57" RadiusX="57">
+                <Rectangle.Effect>
+                    <DropShadowEffect BlurRadius="4" ShadowDepth="4" Color="DeepSkyBlue"></DropShadowEffect>
+                </Rectangle.Effect>
+
+
+            </Rectangle>
+
+            <Path 
+                  Data="M 0,0 L 10,10 L 20,0 L0 ,0"
+                  Fill="Bisque"  Stretch="Fill" Canvas.Left="153" Canvas.Top="1" Height="42.5" Width="51" RenderTransformOrigin="0.5,0.5"
+                  >
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Image Width="100" Height="100" x:Name="icon" Canvas.Left="32" Canvas.Top="81" Source="/KayseriScada;component/Icons/info-01.png" Stretch="Fill"/>
+            <TextBlock Text="ID Of The Sensor : " FontWeight="SemiBold" FontSize="15" Canvas.Left="137" Canvas.Top="124"/>
+            <TextBlock Text="Train Speed : " FontWeight="SemiBold" FontSize="15" Canvas.Left="137" Canvas.Top="149"/>
+            <TextBlock Text="ID Of Train : " FontWeight="SemiBold" FontSize="15" Canvas.Left="137" Canvas.Top="99"/>
+            <TextBlock Name="txtSensorID" Text="Y" FontWeight="SemiBold" FontSize="15" Canvas.Left="269" Canvas.Top="124"/>
+            <TextBlock Name="txtSpeed" Text="Z" FontWeight="SemiBold" FontSize="15" Canvas.Left="233" Canvas.Top="149"/>
+            <TextBlock Name="txtTrainID" Text="X" FontWeight="SemiBold" FontSize="15" Canvas.Left="227" Canvas.Top="99"/>
+            <TextBlock Foreground="Red" MouseLeftButtonDown="txtExit_MouseLeftButtonDown" x:Name="txtExit" FontWeight="Bold" Text="X" FontSize="20" Canvas.Left="283" Canvas.Top="44">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="2" BlurRadius="4" Color="DeepSkyBlue"></DropShadowEffect>
+                </TextBlock.Effect>
+            </TextBlock>
+
+
+        </Canvas>
+
+
+
+    </Viewbox>
+</UserControl>

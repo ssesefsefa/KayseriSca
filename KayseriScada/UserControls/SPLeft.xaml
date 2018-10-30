@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="KayseriScada.UserControls.SPLeft"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KayseriScada.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400">
+
+    <Viewbox >
+        <Grid Width="400.000" Height="400.000">
+            <Canvas>
+                <!-- Layer 2/<Group>/<Path> -->
+                <Path Visibility="Collapsed" Name="errorLine" Fill="#ffff0000" Data="F1 M 59.333,68.531 C 59.333,89.241 76.123,106.031 96.833,106.031 C 117.544,106.031 134.333,89.241 134.333,68.531 C 134.333,47.820 117.544,31.031 96.833,31.031 C 76.123,31.031 59.333,47.820 59.333,68.531 Z" Height="105" Canvas.Left="31.5" Stretch="Fill" Canvas.Top="64" Width="105"/>
+
+                <!-- Layer 2/<Group>/<Path> -->
+                <Path Visibility="Collapsed" Name="xLine" Fill="#ffffffff" Data="F1 M 87.287,68.531 L 76.151,57.393 L 85.696,47.848 L 96.833,58.985 L 107.971,47.848 L 117.516,57.393 L 106.379,68.531 L 117.516,79.667 L 107.971,89.214 L 96.833,78.077 L 85.696,89.213 L 76.151,79.667 L 87.287,68.531 Z" Height="51" Canvas.Left="58.5" Stretch="Fill" Canvas.Top="90.5" Width="51"/>
+
+
+
+                <!-- Layer 2/<Group>/<Path> -->
+                <Path Visibility="Collapsed" Name="energySign" Fill="#ffffcb00" Data="F1 M 214.350,56.893 L 196.635,56.893 L 213.057,31.031 L 192.367,31.031 L 172.971,69.824 L 188.229,69.824 L 172.971,106.031 L 214.350,56.893 Z" Canvas.Left="162" Stretch="Fill" Width="72" Height="107" Canvas.Top="64.5"/>
+
+
+
+                <!-- Layer 2/<Path> -->
+                <Path Name="rotatePathBottomLeft" Fill="Black" Data="F1 M 0.000,325.000 L 181.000,325.000 L 106.000,400.000 L 0.000,400.000 L 0.000,325.000 Z"/>
+
+                <!-- Layer 2/<Path> -->
+                <Path Name="rotatePathBottomRight" Fill="Black" Data="F1 M 400.000,325.000 L 181.000,325.000 L 106.000,400.000 L 400.000,400.000 L 400.000,325.000 Z"/>
+
+                <!-- Layer 2/<Path> -->
+                <Path Name="rotatePathTop" Fill="Black" Data="F1 M 233.698,264.376 C 242.804,260.576 251.000,255.033 257.870,248.163 L 400.000,106.033 L 399.967,0.000 L 204.837,195.130 L 233.698,264.376"/>
+                <!-- Layer 2/<Path> -->
+                <Path Name="rotatePath" Fill="Black" RenderTransformOrigin="0.884,0.737" Data="F1 M 204.837,270.130 L 0.097,270.130 L 0.097,195.130 L 204.837,195.130 L 233.698,264.376 C 224.814,268.083 215.065,270.130 204.837,270.130">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+            </Canvas>
+        </Grid>
+    </Viewbox>
+</UserControl>

@@ -1,0 +1,532 @@
+﻿<UserControl x:Class="KayseriScada.UserControls.DrawingUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KayseriScada.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="738" d:DesignWidth="1366">
+    <Viewbox>
+
+        <Canvas Name="UICanvas" Width="1366" Height="738" Background="#FF43AC86">
+
+
+            <local:LineUC x:Name="LineLeftTopFirst" Height="10" Canvas.Top="199.04" Width="75" Canvas.Left="21.164"/>
+            <local:SwitchPointUC x:Name="switchTopLeft" Height="53" Canvas.Left="96.164" Canvas.Top="199.04" Width="53" RenderTransformOrigin="0.5,0.5">
+                <local:SwitchPointUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SwitchPointUC.RenderTransform>
+            </local:SwitchPointUC>
+            <local:SwitchPointUC x:Name="switchBottomLeft"  Height="53" Canvas.Left="149.164" Canvas.Top="238.04" Width="53" RenderTransformOrigin="0.5,0.5">
+                <local:SwitchPointUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SwitchPointUC.RenderTransform>
+            </local:SwitchPointUC>
+            <local:LineUC x:Name="LineLeftBottomLeft" Height="10" Canvas.Left="23.164" Canvas.Top="281.04" Width="132"/>
+            <local:LineUC x:Name="LineLeftTopSecond" Height="10" Canvas.Left="148.164" Canvas.Top="199.04" Width="144"/>
+            <local:LineUC x:Name="LineBottomSecond" Height="10" Canvas.Left="197.164" Canvas.Top="281.04" Width="41"/>
+            <local:SwitchPointUC x:Name="switchBottomRight" Height="53" Canvas.Left="237.164" Canvas.Top="238.04" Width="53" RenderTransformOrigin="0.5,0.5">
+                <local:SwitchPointUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SwitchPointUC.RenderTransform>
+            </local:SwitchPointUC>
+            <local:SwitchPointUC x:Name="switchTopRight" Height="53" Canvas.Left="290.164" Canvas.Top="199.04" Width="53" RenderTransformOrigin="0.5,0.5">
+                <local:SwitchPointUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SwitchPointUC.RenderTransform>
+            </local:SwitchPointUC>
+            <local:LineUC x:Name="LineFirstBottom" Height="10" Canvas.Left="420" Canvas.Top="281.04" Width="71.164"/>
+            <local:TrackCircuitUC x:Name="tc20" Height="49" Canvas.Left="380" Canvas.Top="265" Width="40"/>
+            <local:LineUC x:Name="LineFirstTop" Height="10" Canvas.Left="420" Canvas.Top="199.04" Width="109.164"/>
+            <local:LineUC x:Name="tc16line15" Height="10" Canvas.Left="581.164" Canvas.Top="199.04" Width="96"/>
+            <local:SwitchPointUC x:Name="pm7" Height="53" Canvas.Left="730.164" Canvas.Top="252.04" Width="53" >
+                <local:SwitchPointUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SwitchPointUC.RenderTransform>
+            </local:SwitchPointUC>
+            <local:SwitchPointUC x:Name="pm8" Height="53" Canvas.Left="529.164" Canvas.Top="199.04" Width="53" RenderTransformOrigin="0.5,0.5">
+                <local:SwitchPointUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SwitchPointUC.RenderTransform>
+            </local:SwitchPointUC>
+            <local:TrackCircuitUC x:Name="tc15" Height="49" Canvas.Left="632.164" Canvas.Top="182.371" Width="40"/>
+            <local:TrackCircuitUC x:Name="tc16" Height="49" Canvas.Left="588.164" Canvas.Top="182.583" Width="40"/>
+            <local:LineUC x:Name="a8Line1" Height="10" Canvas.Left="727.164" Canvas.Top="199.04" Width="500"/>
+            <local:LineUC x:Name="a7Line1" Height="10" Canvas.Left="811.164" Canvas.Top="272.54" Width="490"/>
+            <local:LineUC x:Name="a6Line" Height="10" Canvas.Left="875.164" Canvas.Top="344.502" Width="487"/>
+            <local:LineUC x:Name="a5Line" Height="10" Canvas.Left="954.164" Canvas.Top="418.54" Width="409"/>
+            <local:LineUC x:Name="a8Line2" Height="10" Canvas.Left="1215.164" Canvas.Top="199.04" Width="144"/>
+            <local:LineUC x:Name="a4Line" Height="10" Canvas.Left="1026.164" Canvas.Top="491.54" Width="333"/>
+            <local:LineUC x:Name="a3Line" Height="10" Canvas.Left="1109.164" Canvas.Top="564.54" Width="250"/>
+            <local:LineUC x:Name="a1Line" Height="10" Canvas.Left="1199.663" Canvas.Top="703.537" Width="159"/>
+            <local:LineUC x:Name="tc18line16" Height="10" Canvas.Left="483.164" Canvas.Top="284.04" Width="30.503">
+                <local:LineUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:LineUC.RenderTransform>
+            </local:LineUC>
+            <local:LineUC x:Name="tc8Line11" Height="10" Canvas.Left="811.289" Canvas.Top="318.415" Width="27.997">
+                <local:LineUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:LineUC.RenderTransform>
+            </local:LineUC>
+            <local:LineUC x:Name="tc5Line7" Height="10" Canvas.Left="973.82" Canvas.Top="474.04" Width="15.764">
+                <local:LineUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:LineUC.RenderTransform>
+            </local:LineUC>
+            <local:LineUC x:Name="tc11Line13" Height="10" Canvas.Left="726.995" Canvas.Top="234.541" Width="47">
+                <local:LineUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform />
+                    </TransformGroup>
+                </local:LineUC.RenderTransform>
+            </local:LineUC>
+            <local:LineUC x:Name="tc7Line8" Height="10" Canvas.Left="896.664" Canvas.Top="401.915" Width="13.625">
+                <local:LineUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:LineUC.RenderTransform>
+            </local:LineUC>
+            <local:LineUC x:Name="tc3Line5" Height="10" Canvas.Left="1048.498" Canvas.Top="547.707" Width="13.908">
+                <local:LineUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:LineUC.RenderTransform>
+            </local:LineUC>
+            <local:LineUC x:Name="tc2Line3" Height="10" Canvas.Left="1120.295" Canvas.Top="619.54" Width="13.466">
+                <local:LineUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:LineUC.RenderTransform>
+            </local:LineUC>
+            <local:LineUC x:Name="a2Line" Height="10" Canvas.Left="1180.164" Canvas.Top="635.789" Width="179"/>
+            <local:LineUC x:Name="tc1Line3" Height="10" Canvas.Left="1164.247" Canvas.Top="663.542" Width="59.9">
+                <local:LineUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:LineUC.RenderTransform>
+            </local:LineUC>
+            <local:LineUC x:Name="a7Line2" Height="10" Canvas.Left="1289.164" Canvas.Top="272.54" Width="70"/>
+            <local:TrackCircuitUC x:Name="tc1" Height="48" Canvas.Left="1248.164" Canvas.Top="686.04" Width="40"/>
+            <local:TrackCircuitUC x:Name="tc2" Height="48" Canvas.Left="1200.164" Canvas.Top="618.207" Width="40" />
+            <local:TrackCircuitUC x:Name="tc4" Height="48" Canvas.Left="1128.164" Canvas.Top="547.79" Width="40" RenderTransformOrigin="0.5,0.5"/>
+            <local:TrackCircuitUC x:Name="tc6" Height="48" Canvas.Left="1053.164" Canvas.Top="474.372" Width="40" RenderTransformOrigin="0.5,0.5"/>
+            <local:TrackCircuitUC x:Name="tc9" Height="48" Canvas.Left="978.164" Canvas.Top="402.036" Width="40" RenderTransformOrigin="0.5,0.5"/>
+            <local:TrackCircuitUC x:Name="tc10" Height="48" Canvas.Left="903.164" Canvas.Top="328.004" Width="40" RenderTransformOrigin="0.5,0.5"/>
+            <local:TrackCircuitUC x:Name="tc12" Height="48" Canvas.Left="827.164" Canvas.Top="254.704" Width="40" RenderTransformOrigin="0.5,0.5"/>
+            <local:TrackCircuitUC x:Name="tc14" Height="48" Canvas.Left="746.164" Canvas.Top="181.705" Width="40" RenderTransformOrigin="0.5,0.5"/>
+            <local:SPLeft x:Name="pm6" Canvas.Left="788.164" Canvas.Top="235.04" Height="53" Width="53" >
+                <local:SPLeft.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SPLeft.RenderTransform>
+            </local:SPLeft>
+            <local:SPLeft x:Name="pm5" Canvas.Left="860.664" Canvas.Top="307.04" Height="53" Width="53">
+                <local:SPLeft.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SPLeft.RenderTransform>
+            </local:SPLeft>
+            <local:SPLeft x:Name="pm4" Canvas.Left="936.664" Canvas.Top="381.04" Height="53" Width="53" >
+                <local:SPLeft.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SPLeft.RenderTransform>
+            </local:SPLeft>
+            <local:SPLeft x:Name="pm3" Canvas.Left="1014.664" Canvas.Top="454.04" Height="53" Width="53" >
+                <local:SPLeft.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SPLeft.RenderTransform>
+            </local:SPLeft>
+            <local:SPLeft x:Name="pm2" Canvas.Left="1088.664" Canvas.Top="527.04" Height="53" Width="53" >
+                <local:SPLeft.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SPLeft.RenderTransform>
+            </local:SPLeft>
+            <local:SPLeft x:Name="pm1" Canvas.Left="1159.844" Canvas.Top="598.368" Height="53" Width="53">
+                <local:SPLeft.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:SPLeft.RenderTransform>
+            </local:SPLeft>
+
+
+            <TextBlock Text="PM 1" FontSize="15" FontWeight="Bold" Canvas.Left="1074.164" Canvas.Top="636.04"></TextBlock>
+            <TextBlock Text="PM 2" FontSize="15" FontWeight="Bold" Canvas.Left="978.164" Canvas.Top="558.04"/>
+            <TextBlock Text="PM 3" FontSize="15" FontWeight="Bold" Canvas.Left="903.164" Canvas.Top="491.04"/>
+            <TextBlock Text="PM 4" FontSize="15" FontWeight="Bold" Canvas.Left="831.164" Canvas.Top="418.04"/>
+            <TextBlock Text="PM 5" FontSize="15" FontWeight="Bold" Canvas.Left="769.164" Canvas.Top="345.04"/>
+            <TextBlock Text="PM 6" FontSize="15" FontWeight="Bold" Canvas.Left="697.164" Canvas.Top="266.04"/>
+            <TextBlock Text="PM 7" FontSize="15" FontWeight="Bold" Canvas.Left="686.164" Canvas.Top="173.04"/>
+            <TextBlock Text="PM 8" FontSize="15" FontWeight="Bold" Canvas.Left="535.164" Canvas.Top="173.04"/>
+            <local:TrackCircuitUC x:Name="tc11" Height="48" Canvas.Left="774.498" Canvas.Top="287.373" Width="40" RenderTransformOrigin="0.5,0.5">
+                <local:TrackCircuitUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:TrackCircuitUC.RenderTransform>
+            </local:TrackCircuitUC>
+            <local:TrackCircuitUC x:Name="tc17" Height="49" Canvas.Left="467.164" Canvas.Top="182.04" Width="40"/>
+            <local:TrackCircuitUC x:Name="tc18" Height="48" Canvas.Left="502.164" Canvas.Top="231.04" Width="40" RenderTransformOrigin="0.5,0.5">
+                <local:TrackCircuitUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:TrackCircuitUC.RenderTransform>
+            </local:TrackCircuitUC>
+            <local:TrackCircuitUC x:Name="tc3" Height="48" Canvas.Left="1083.164" Canvas.Top="587.791" Width="40" RenderTransformOrigin="0.5,0.5">
+                <local:TrackCircuitUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:TrackCircuitUC.RenderTransform>
+            </local:TrackCircuitUC>
+            <local:TrackCircuitUC x:Name="tc5" Height="48" Canvas.Left="1009.832" Canvas.Top="515.373" Width="40" RenderTransformOrigin="0.5,0.5">
+                <local:TrackCircuitUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:TrackCircuitUC.RenderTransform>
+            </local:TrackCircuitUC>
+            <local:TrackCircuitUC x:Name="tc7" Height="48" Canvas.Left="934.164" Canvas.Top="441.04" Width="40" RenderTransformOrigin="0.5,0.5">
+                <local:TrackCircuitUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:TrackCircuitUC.RenderTransform>
+            </local:TrackCircuitUC>
+            <local:TrackCircuitUC x:Name="tc13" Height="49" Canvas.Left="737.496" Canvas.Top="219.875" Width="40">
+                <local:TrackCircuitUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:TrackCircuitUC.RenderTransform>
+            </local:TrackCircuitUC>
+            <local:TrackCircuitUC x:Name="tc8" Height="48" Canvas.Left="879.997" Canvas.Top="362.54" Width="40">
+                <local:TrackCircuitUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:TrackCircuitUC.RenderTransform>
+            </local:TrackCircuitUC>
+            <local:RailLampUC x:Name="sl1" Height="35" Canvas.Left="788.164" Canvas.Top="189.04" Width="35">
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+            <local:RailLampUC x:Name="sl2" Height="35" Canvas.Left="868.164" Canvas.Top="259.04" Width="35">
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+            <local:RailLampUC x:Name="sl3" Height="35" Canvas.Left="948.164" Canvas.Top="334.04" Width="35" >
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+            <local:RailLampUC x:Name="sl4" Height="35" Canvas.Left="1023.164" Canvas.Top="404.04" Width="35" >
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+            <local:RailLampUC x:Name="sl5" Height="35" Canvas.Left="1098.164" Canvas.Top="479.04" Width="35" >
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+            <local:RailLampUC x:Name="sl6" Height="35" Canvas.Left="1173.164" Canvas.Top="554.04" Width="35" >
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+            <local:RailLampUC x:Name="sl7" Height="35" Canvas.Left="1243.164" Canvas.Top="624.04" Width="35" >
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+            <local:RailLampUC x:Name="sl8" Height="35" Canvas.Left="1283.164" Canvas.Top="689.04" Width="35" >
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+
+            <TextBlock Text="SS 1" FontWeight="SemiBold" Canvas.Left="838.164" Canvas.Top="164.04"></TextBlock>
+            <TextBlock Text="SS 2" FontWeight="SemiBold" Canvas.Left="921.97" Canvas.Top="233.08"></TextBlock>
+            <TextBlock Text="SS 3" FontWeight="SemiBold" Canvas.Left="1003.164" Canvas.Top="308.08"/>
+            <TextBlock Text="SS 4" FontWeight="SemiBold" Canvas.Left="1073.164" Canvas.Top="378.08"/>
+            <TextBlock Text="SS 5" FontWeight="SemiBold" Canvas.Left="1146.97" Canvas.Top="453.08"/>
+            <TextBlock Text="SS 6" FontWeight="SemiBold" Canvas.Left="1223.164" Canvas.Top="528.08"/>
+            <TextBlock Text="SS 7" FontWeight="SemiBold" Canvas.Left="1288.164" Canvas.Top="599.04"/>
+            <TextBlock Text="SS 8" FontWeight="SemiBold" Canvas.Left="1328.164" Canvas.Top="663.08"/>
+            <local:RailLampUC x:Name="sl9" Height="35" Canvas.Left="375" Width="35" RenderTransformOrigin="0.5,0.5" Canvas.Top="150">
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+            <local:RailLampUC x:Name="sl10" Height="35" Canvas.Left="375" Canvas.Top="305" Width="35" RenderTransformOrigin="0.5,0.5">
+                <local:RailLampUC.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:RailLampUC.RenderTransform>
+            </local:RailLampUC>
+            <TextBlock Text="SS 9" FontWeight="SemiBold" Canvas.Left="158.164" Canvas.Top="159.04"/>
+            <TextBlock Text="SS 10" FontWeight="SemiBold" Canvas.Left="168.164" Canvas.Top="308.08"/>
+
+            <TextBlock Text="A 8" FontWeight="SemiBold" Canvas.Left="1338.164" Canvas.Top="173.08"></TextBlock>
+            <TextBlock Text="A 7" FontWeight="SemiBold" Canvas.Left="1340.144" Canvas.Top="249.04"/>
+            <TextBlock Text="A 6" FontWeight="SemiBold" Canvas.Left="1340.144" Canvas.Top="324.04"/>
+            <TextBlock Text="A 5" FontWeight="SemiBold" Canvas.Left="1340.144" Canvas.Top="398.08"/>
+            <TextBlock Text="A 4" FontWeight="SemiBold" Canvas.Left="1340.144" Canvas.Top="469.04"/>
+            <TextBlock Text="A 3" FontWeight="SemiBold" Canvas.Left="1340.144" Canvas.Top="543.08"/>
+            <TextBlock Text="A 2" FontWeight="SemiBold" Canvas.Left="1338.164" Canvas.Top="614.04"/>
+            <TextBlock Text="A 1" FontWeight="SemiBold" Canvas.Left="1340.144" Canvas.Top="683.08"/>
+            <TextBlock Text="B 1" FontWeight="SemiBold" Canvas.Left="25.1" Canvas.Top="174.04"/>
+            <TextBlock Text="B 2" FontWeight="SemiBold" Canvas.Left="27.79" Canvas.Top="254.04"/>
+            <TextBox x:Name="txt1" Height="23" Canvas.Left="594" TextWrapping="Wrap"  Canvas.Top="586.96" Width="120"/>
+            <TextBox x:Name="txt2" Height="23" Canvas.Left="805" TextWrapping="Wrap"  Canvas.Top="586.96" Width="120"/>
+            <Button x:Name="btnpm2" Content="pm0-8" Canvas.Left="940" Canvas.Top="590" Width="75" Click="btnpm2_Click"/>
+            <Button x:Name="btnStart_Copy" Content="pm0-4" Canvas.Left="720" Canvas.Top="590" Width="75" Click="btnStart_Click"/>
+            <TextBox x:Name="txtByte1" Height="23" Canvas.Left="380" TextWrapping="Wrap"  Canvas.Top="447.96" Width="120"/>
+            <TextBlock  Text="Byte0" Canvas.Left="510" Canvas.Top="417.96" Width="40" />
+            <TextBlock  Text="Byte1" Canvas.Left="510" Canvas.Top="452" Width="35" />
+            <TextBox x:Name="txtByte0" Height="23" Canvas.Left="380" TextWrapping="Wrap"  Canvas.Top="414.96" Width="120"/>
+            <TextBlock  Text="PointMachineStates" Canvas.Left="722" Canvas.Top="563" Width="107" />
+            <Button x:Name="btnenergy1" Content="EnergyCheck" Canvas.Left="400" Canvas.Top="473" Width="75" Click="btnenergy1_Click"/>
+            <TextBox x:Name="txtByte3" Height="23" Canvas.Left="565" TextWrapping="Wrap"  Canvas.Top="445" Width="120"/>
+            <TextBlock  Text="Byte2" Canvas.Left="700" Canvas.Top="417.04" Width="35" />
+            <TextBlock  Text="Byte3" Canvas.Left="700" Canvas.Top="448" Width="40" />
+            <TextBox x:Name="txtByte2" Height="23" Canvas.Left="565" TextWrapping="Wrap"  Canvas.Top="413" Width="120"/>
+            <Button x:Name="btnenergy2" Content="EnergyCheck" Canvas.Left="590" Canvas.Top="473.04" Width="75" Click="btnenergy2_Click_1"/>
+            <TextBox Width="75" Height="25" x:Name="txtbyte11" Canvas.Left="8" Canvas.Top="448"/>
+            <TextBox Width="75" Height="25" x:Name="txtbyte12" Canvas.Left="103" Canvas.Top="448"/>
+            <TextBox Width="75" Height="25" x:Name="txtbyte13" Canvas.Left="198" Canvas.Top="448"/>
+            <Button Click="btnbyte11_Click" x:Name="btnbyte11" Content="Action" Canvas.Left="288" Canvas.Top="453" Width="75"/>
+            <TextBlock  Text="TrackCircuitStates" Canvas.Left="183" Canvas.Top="412.04" Width="107" />
+            <TextBox Width="75" Height="25" x:Name="txtbyte6" Canvas.Left="19" Canvas.Top="587.08"/>
+            <TextBox Width="75" Height="25" x:Name="txtbyte7" Canvas.Left="119" Canvas.Top="587.08"/>
+            <TextBox Width="75" Height="25" x:Name="txtbyte8" Canvas.Left="214" Canvas.Top="587.08"/>
+            <TextBox Width="75" Height="25" x:Name="txtbyte9" Canvas.Left="314" Canvas.Top="587.08"/>
+            <TextBox Width="75" Height="25" x:Name="txtbyte10" Canvas.Left="404" Canvas.Top="587.08"/>
+            <Button Click="btnLamp_Click" x:Name="btnLamp" Content="Action" Canvas.Left="499" Canvas.Top="587.08" Width="75"/>
+            <TextBox Width="75" Height="25" x:Name="txtbyte26" Canvas.Left="8" Canvas.Top="408"/>
+            <TextBlock  Text="TC Failure" Canvas.Left="88" Canvas.Top="412.04" Width="60" />
+            <DataGrid x:Name="dataGridView" Canvas.Left="10" Canvas.Top="10" Height="130" Width="450">
+
+                <DataGrid.RowStyle>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding StatusName}" Value="Error     ">
+                                <Setter Property="Background" Value="Red"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding StatusName}" Value="Reserved  ">
+                                <Setter Property="Background" Value="Orange"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding StatusName}" Value="Free      ">
+                                <Setter Property="Background" Value="Green"/>
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding StatusName}" Value="Opened    ">
+                                <Setter Property="Background" Value="Orange"/>
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding StatusName}" Value="Closed    ">
+                                <Setter Property="Background" Value="Orange"/>
+                            </DataTrigger>
+
+
+                            <DataTrigger Binding="{Binding StatusName}" Value="Energy    ">
+                                <Setter Property="Background" Value="Orange"/>
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding StatusName}" Value="Pass      ">
+                                <Setter Property="Background" Value="GreenYellow"/>
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding StatusName}" Value="Stop      ">
+                                <Setter Property="Background" Value="DarkRed"/>
+                            </DataTrigger>
+
+                        </Style.Triggers>
+
+                    </Style>
+                </DataGrid.RowStyle>
+
+            </DataGrid>
+            <TextBlock  Text="RailLamp : 0001=Stop,0010=Pass,1000=Fail " Canvas.Left="19" Canvas.Top="557.04" Width="240" />
+            <local:TrackCircuitUC x:Name="tc19"  Height="49" Canvas.Left="379" Canvas.Top="181" Width="41"/>
+            <local:LineUC x:Name="LineFirstTop_Copy" Height="10" Canvas.Left="341.5" Canvas.Top="199" Width="37.25"/>
+            <local:LineUC x:Name="lineFirstBottom_Copy" Height="10" Canvas.Left="290" Canvas.Top="280.999" Width="90"/>
+            <TextBox Width="75" Height="25" x:Name="txtRoute" Canvas.Left="20" Canvas.Top="655"/>
+            <TextBlock  Text="Route Request" Canvas.Left="15" Canvas.Top="625" Width="80" />
+            <Button Click="btnRouteRequest_Click"  x:Name="btnRouteRequest" Content="Action" Canvas.Left="115" Canvas.Top="655" Width="75"/>
+            <TextBox Width="75" Height="25" x:Name="txtRoute2" Canvas.Left="20" Canvas.Top="690"/>
+            <Button Click="btnRoute2_Click"  x:Name="btnRoute2" Content="Action" Canvas.Left="115" Canvas.Top="690.04" Width="75"/>
+            
+
+
+
+
+        </Canvas>
+
+    </Viewbox>
+</UserControl>

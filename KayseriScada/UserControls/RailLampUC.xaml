@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="KayseriScada.UserControls.RailLampUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KayseriScada.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="108" Width="66">
+    <Viewbox >
+
+
+        <Grid>
+
+            <!-- Layer 1/<Path> -->
+            <Path Name="holder" Fill="#ff7f7f7f" Data="F1 M 105.000,247.500 L 105.000,360.000 L 0.000,360.000 L 0.000,400.000 L 251.000,400.000 L 251.000,360.000 L 145.000,360.000 L 145.000,247.500 L 105.000,247.500 Z"/>
+
+            <!-- Layer 1/<Path> -->
+            <Path Name="elips" Fill="#ffff0000" Data="F1 M 250.000,125.000 C 250.000,194.036 194.036,250.000 125.000,250.000 C 55.964,250.000 0.000,194.036 0.000,125.000 C 0.000,55.964 55.964,0.000 125.000,0.000 C 194.036,0.000 250.000,55.964 250.000,125.000 Z"/>
+
+            <!-- Layer 1/<Rectangle> -->
+            <Path Name="line" Fill="#ffffffff" RenderTransformOrigin="0.5,0.32" Data="F1 M 32.500,142.500 L 217.500,142.500 L 217.500,107.500 L 32.500,107.500 L 32.500,142.500 Z">
+                <Path.RenderTransform>
+                    <RotateTransform></RotateTransform>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- Layer 1/<Path> -->
+            <Path Name="littleElips" Opacity="1" Fill="#ffffffff" Data="F1 M 202.495,37.000 C 195.333,37.000 189.527,42.806 189.527,49.968 C 189.527,57.130 195.333,62.936 202.495,62.936 C 209.657,62.936 215.463,57.130 215.463,49.968 C 215.463,42.806 209.657,37.000 202.495,37.000 Z" Stretch="Fill" Margin="152.121,29.076,47.116,323.939"/>
+
+        </Grid>
+    </Viewbox>
+</UserControl>

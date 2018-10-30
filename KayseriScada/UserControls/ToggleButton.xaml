@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="KayseriScada.UserControls.ToggleButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KayseriScada.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="760">
+
+    <Viewbox >
+        <Grid Height="60" Width="100">
+
+            <Rectangle  x:Name="backRect" Height="56" Width="96"  RadiusY="25" RadiusX="25" Fill="#FFA0A0A0"></Rectangle>
+            <Ellipse x:Name="Kontrol" Fill="White" Width="50" 
+                 HorizontalAlignment="Center" Height="50" MouseLeftButtonDown="Kontrol_MouseLeftButtonDown"/>
+        </Grid>
+
+    </Viewbox>
+</UserControl>

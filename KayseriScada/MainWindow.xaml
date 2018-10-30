@@ -1,0 +1,21 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KayseriScada"
+        xmlns:UserControls="clr-namespace:KayseriScada.UserControls" x:Class="KayseriScada.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow"  Height="738" Width="1366" ResizeMode="NoResize" WindowState="Maximized">
+    <Viewbox>
+        <Grid>
+
+            <Canvas Height="738" Width="1366" Background="#FF43AC86">
+
+                <UserControls:DrawingUI HorizontalAlignment="Left" Height="738"  VerticalAlignment="Top" Width="1366.695" Canvas.Left="5.205" Canvas.Top="15.614"/>
+                <UserControls:ClockUserControl Height="221.115" Width="198.704" Canvas.Left="1164.879" Canvas.Top="-15.614"/>
+
+            </Canvas>
+        </Grid>
+    </Viewbox>
+</Window>
